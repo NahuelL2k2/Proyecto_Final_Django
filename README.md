@@ -1,11 +1,16 @@
 # Proyecto_Final_Django
 Proyecto final del curso de Coderhouse de Python
 
--GUIA DE USO:
+## GUIA DE USO:
 
-Se debe entrar a las urls: /mi-familia, /mis-mascotas, /vehiculos.
+### PASOS:
 
-Desde allí se podran ver, añadir, modificar y buscar instancias de los modelos Familiar, Mascota y Vehiculo respectivamente.
+1. Copiar el repositorio en una carpeta -> git clone https://github.com/NahuelL2k2/Proyecto_Final_Django
+2. Entrar a la carpeta del proyecto y en una terminal ejecutar el archivo manage.py -> En Windows(SHELL, CMD): python manage.py runserver
+3. Ingresar a 127.0.0.1:8000, en el cual se encontraran todas las rutas de las cuales solo es necesario que se accedan a /mi-familia, /mis-mascotas y /vehiculos, en cualquiera de las rutas anteriormente dichas se mostrara una lista de los modelos Familiar, Mascota y Vehiculo.
+4. Crear instancias mediante el boton que cada una de las paginas anteriormente dichas tendran para enviarlos a la pagina de creación.
+(OPCIONAL) El archivo seed_data.py esta preparado con 3 instancias de cada modelo, para cargarlas se debera hacerlo mediante una terminal -> En Windows(SHELL, CMD): python manage.py shell -> import seed_data.py -> exit.
+5. Comprobar las funciones buscar, actualizar y borrar.
 
-Para crear las instancias se encuentra en cada url anteriormente dicha un boton para ir a la pagina de creación, la otra manera es cargar el seed_data.py que ya viene preparado con 3 instancias de cada Modelo.
-
+## Acerca de mi:
+Nahuel Leiva Full Stack Dev en proceso, alumno de la Comision Python 45020 y Comision 33155 Desarrollo Web. 
