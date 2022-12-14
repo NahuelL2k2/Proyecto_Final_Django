@@ -1,0 +1,15 @@
+{% extends 'appDjango/base.html' %}
+{% block titulo %}Actualizar Vehiculo{% endblock %}
+{% block contenido %}
+            <div class="main__contenedor-principal__botones">
+                <form action="/vehiculos/actualizar/{{ vehiculo.id }}" method="post"> 
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="submit" value="Submit" id="boton-enviar">
+                </form>
+                <h2 style="color:green">{{msg_exito}}</h2>
+                <a href="/vehiculos/"><h2>Volver a la lista de vehiculos</a></a>
+            </div>
+        </div>
+    </main>
+{% endblock %}

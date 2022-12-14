@@ -1,0 +1,13 @@
+{% extends 'appDjango/base.html' %}
+{% block titulo %}Crear Vehiculo{% endblock %}
+{% block contenido %}
+<div class="main__contenedor-principal__botones">    
+    <form action="/vehiculos/alta" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" id="boton-enviar">
+    </form>
+    <p style="color:green">{{msg_exito}}</p>
+    <a href="/vehiculos/"><h6>Volver a lista de Vehiculos</h6></a>
+</div>
+{% endblock %}
