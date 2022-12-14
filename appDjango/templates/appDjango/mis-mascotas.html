@@ -7,9 +7,10 @@
         {{ form }}
         <label for="id_nombre">Nombre:</label>
         <input type="text" placeholder="Ingrese el familiar a buscar..."required id="id_nombre" name="nombre" maxlength="100">
-        <input type="submit" value="Submit" id="boton-enviar">
+        <input type="submit" value="Enviar" id="boton-enviar">
     </form>
 </div>
+<a href="/mis-mascotas/alta" id="boton-alta">Crear Mascota</a>
 <div class="main__contenedor-principal__lista">
     {% for mascota in lista_mascotas %}
         <ul>

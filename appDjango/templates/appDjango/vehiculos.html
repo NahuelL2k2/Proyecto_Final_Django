@@ -7,9 +7,10 @@
                     {{ form }}
                     <label for="id_marca">Marca:</label>
                     <input type="text" placeholder="Ingrese el vehiculo a buscar..."required id="id_marca" name="marca" maxlength="100">
-                    <input type="submit" value="Submit" id="boton-enviar">
+                    <input type="submit" value="Enviar" id="boton-enviar">
                 </form>
             </div>
+            <a href="/vehiculos/alta" id="boton-alta">Crear Vehiculo</a>
             <div class="main__contenedor-principal__lista">
                 {% for vehiculo in lista_vehiculos %}
                     <ul>

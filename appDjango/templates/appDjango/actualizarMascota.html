@@ -1,14 +1,14 @@
 {% extends 'appDjango/base.html' %}
-{% block titulo %}Acutalizar Mascotas{% endblock %}
+{% block titulo %}Actualizar Mascotas{% endblock %}
 {% block contenido %}
             <div class="main__contenedor-principal__botones">
                 <form action="/mis-mascotas/actualizar/{{ mascota.id }}" method="post"> 
                     {% csrf_token %}
                     {{ form }}
-                    <input type="submit" value="Submit" id="boton-enviar">
+                    <input type="submit" value="Enviar" id="boton-enviar">
                 </form>
                 <h2 style="color:green">{{msg_exito}}</h2>
-                <a href="/mis-mascotas/"><h2>Volver a la lista de mascotas</a></a>
+                <a href="/mis-mascotas/" id="boton-volver">Volver a la lista de mascotas</a>
             </div>
         </div>
     </main>

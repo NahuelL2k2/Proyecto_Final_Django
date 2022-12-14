@@ -11,7 +11,7 @@ Mascota(nombre="Maia", edad="9", animal="Gato")
 Mascota(nombre="Cachy", edad="5", animal="Perro")
 
 Vehiculo(tipo="Auto", antiguedad="5", marca="Renault")
-Vehiculo(tipo="Bicleta", antiguedad="0", marca="Mountainbike")
+Vehiculo(tipo="Bicicleta", antiguedad="0", marca="Mountainbike")
 Vehiculo(tipo="Moto", antiguedad="1", marca="Yamaha")
 
 print("Se cargo con éxito los usuarios de pruebas")

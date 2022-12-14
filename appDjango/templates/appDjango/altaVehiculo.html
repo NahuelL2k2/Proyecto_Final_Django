@@ -5,9 +5,9 @@
     <form action="/vehiculos/alta" method="post">
         {% csrf_token %}
         {{ form }}
-        <input type="submit" value="Submit" id="boton-enviar">
+        <input type="submit" value="Enviar" id="boton-enviar">
     </form>
     <p style="color:green">{{msg_exito}}</p>
-    <a href="/vehiculos/"><h6>Volver a lista de Vehiculos</h6></a>
+    <a href="/vehiculos/" id="boton-volver">Volver a la lista de vehiculos</a>
 </div>
 {% endblock %}

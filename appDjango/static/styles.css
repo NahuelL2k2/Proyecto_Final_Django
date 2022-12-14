@@ -4,9 +4,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 body{
-    background-color: white;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(5,179,149,1) 0%, rgba(0,191,255,1) 100%);;
+
 }
 
 h1{
@@ -19,6 +20,8 @@ label {
     font-size: 20px;
 }
 
+/* -------------------- MAIN ---------------------- */
+
 .main__contenedor-principal {
     display: flex;
     flex-direction: column;
@@ -30,6 +33,7 @@ label {
     box-shadow: 1px 10px 47px -3px rgba(0,0,0,0.75);
     -webkit-box-shadow: 1px 10px 47px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 10px 47px -3px rgba(0,0,0,0.75);
+    background-color: #a0ebde;
 }
 .main__contenedor-principal__botones{
     /* border: 1px solid blue; */
@@ -82,6 +86,7 @@ label {
     border: 1px solid black;
     border-radius: 10px;
     font-weight: lighter;
+    background-color: rgb(240, 240, 240);
 }
 
 .main__contenedor-principal__lista ul li:hover{
@@ -99,6 +104,39 @@ label {
 }
 
 
+#boton-alta{
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2px;
+    margin-top: 8px;
+    background-color: white;
+    color: black;
+}
+
+#boton-alta:hover{
+    cursor: pointer;
+    background-color: rgb(95, 230, 102);
+}
+
+#boton-volver{
+    display: block;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    width: 20%;
+    margin-left: 40%;
+
+}
+
+#boton-volver:hover{
+    cursor: pointer;
+    background-color: rgb(95, 230, 102);}
+
+
 /* -------------------- DJANGO ---------------------- */
 
 
@@ -107,6 +145,7 @@ label {
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
+    width: 250px;
 
 }
 
@@ -164,6 +203,7 @@ label {
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
+    width: 250px;
 }
 
 

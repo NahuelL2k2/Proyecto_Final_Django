@@ -201,7 +201,7 @@ class AltaVehiculo(View):
         form = self.form_class(request.POST)
         if form.is_valid():
             form.save()
-            msg_exito = f"se cargo con éxito la Vehiculo {form.cleaned_data.get('marca')}"
+            msg_exito = f"se cargo con éxito el Vehiculo {form.cleaned_data.get('marca')}"
             form = self.form_class(initial=self.initial)
             return render(request, self.template_name, {'form':form, 
                                                         'msg_exito': msg_exito})
