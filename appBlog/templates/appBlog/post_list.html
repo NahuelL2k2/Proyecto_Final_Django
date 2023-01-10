@@ -1,5 +1,8 @@
 {% extends 'appBlog/base.html' %}
 {% block contenido %}
+{% if user.is_authenticated %}
+<a class="border border-primary p-3  ms-3" href="{% url 'appBlog-user-actualizar' user.id%}">ACTUALIZAR USUARIO</a>
+{% endif %}
 <ul>
 {% for post in object_list  %}
     <div class="container">
