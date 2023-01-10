@@ -1,0 +1,18 @@
+{% extends 'appBlog/base.html' %}
+{% block contenido %}
+<ul>
+{% for post in object_list  %}
+    <li>{{post.titulo}}
+        <br>
+        {{post.sub_titulo}}
+        <br>
+        {{post.texto}}
+        {% if  user.is_authenticated%}
+        <a href="{% url 'appBlog-actualizar' post.id %}" class="border border-primary p-3 ms-5">Actualizar</a>
+        <a href="{% url 'appBlog-borrar' post.id %}" class="border border-primary p-3 ms-3">Borrar</a>
+        <a href="{% url 'appBlog-detalle' post.id %}" class="border border-primary p-3  ms-3">Ver</a>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+{% endblock contenido %}

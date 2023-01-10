@@ -1,0 +1,20 @@
+{% extends 'appBlog/base.html' %}
+
+{% block titulo %}
+<div class="site-heading">
+    <h1>Acerca de mi</h1>
+    <span class="subheading">Proyecto Final Python Coderhouse</span>
+</div>
+{% endblock titulo %}
+{% block contenido %}
+<div class="container border d-flex justify-content-center">
+    {%load static%}
+    <img src="{% static "appBlog/assets/img/yo.jpeg"%}" height="216">
+    <div class="container">
+        <h1>Nahuel David Leiva</h1>
+        <p>Tengo 21 años, Actualmente trabajo de Analista de calidad en un laboratorio pero quiero entrar en el mundo de la programación y seguramente trabajar de esto toda la vida.</p>
+        <br>
+        <br>
+    <div>
+</div>
+{% endblock contenido %}
